@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5bc6f2"
+    android:orientation="vertical"
+    tools:context=".AddCityActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <AutoCompleteTextView
+            android:id="@+id/etCountry"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_bg"
+            android:completionThreshold="2"
+            android:hint="@string/enter_country"
+            android:inputType="textCapWords" />
+
+        <ImageView
+            android:id="@+id/imgFlag"
+            android:layout_marginStart="5dp"
+            android:layout_width="64dp"
+            android:layout_height="64dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <AutoCompleteTextView
+            android:id="@+id/etCity"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_bg"
+            android:completionThreshold="2"
+            android:hint="Enter City"
+            android:inputType="textCapWords" />
+
+        <ImageButton
+            android:id="@+id/btnAdd"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/mainColor"
+            android:src="@drawable/add" />
+    </LinearLayout>
+
+</LinearLayout>
